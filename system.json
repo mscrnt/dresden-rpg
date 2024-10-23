@@ -1,19 +1,19 @@
 {
-  "id": "fate-core-official",
-  "title": "Fate Core Official",
-  "description": "Grab your plasma rifles, spell components, and jetpacks! Name your game; Fate Core is the foundation that can make it happen. Fate Core is a flexible system that can support whatever worlds you dream up. Have you always wanted to play a post-apocalyptic spaghetti western with tentacle monsters? Swords and sorcery in space? Wish there was a game based on your favorite series of books, film, or television, but it never happened? Fate Core is your answer. <p>Fate Core is a tabletop roleplaying game about proactive, capable people who lead dramatic lives. The type of drama they experience is up to you. But wherever they go, you can expect a fun storytelling experience full of twists…of fate.</p><p>This Foundry system is supported by Evil Hat Productions and will allow you to build almost any character from a system that's Powered by Fate.</p>",
+  "id": "dresden-rpg",
+  "title": "Dresden RPG",
+  "description": "This system is based on the Fate Core system and adapted to support the Dresden Files Role-Playing Game. It includes features like custom stress tracks, consequences, and skills tailored to the unique aspects of the Dresden universe.",
   "authors": [
     {
-      "name": "Richard Bellingham",
+      "name": "Kenneth Blossom",
       "flags": {}
     }
   ],
-  "url": "https://github.com/Sk1mble/fate-core-official",
+  "url": "https://github.com/mscrnt/dresden-rpg",
   "compatibility": {
     "minimum": "12",
     "verified": "12.331"
   },
-  "version": "4.7.12",
+  "version": "1.0.0",
   "scripts": [
     "scripts/fcoConstants.js",
     "scripts/ManageSkills.js",
@@ -62,67 +62,67 @@
     },
     {
       "lang": "pt-BR",
-      "name":"Português (Brasil)",
-      "path":"lang/pb.json",
+      "name": "Português (Brasil)",
+      "path": "lang/pb.json",
       "flags": {}
     }
   ],
   "packs": [
     {
       "name": "macros",
-      "label": "Fate Core Official Macros",
+      "label": "Dresden RPG Macros",
       "path": "/packs/macros.db",
       "type": "Macro",
-      "system": "fate-core-official",
+      "system": "dresden-rpg",
       "private": false,
       "flags": {}
     },
     {
       "name": "documentation",
-      "label": "Fate Core Official Documentation",
+      "label": "Dresden RPG Documentation",
       "path": "/packs/documentation.db",
       "type": "JournalEntry",
-      "system": "fate-core-official",
+      "system": "dresden-rpg",
       "private": false,
       "flags": {}
     }
   ],
   "socket": true,
-  "manifest": "https://raw.githubusercontent.com/Sk1mble/fate-core-official/main/system.json",
-  "download": "https://github.com/Sk1mble/fate-core-official/archive/refs/tags/v4.7.12.zip",
-  "grid":{
-    "distance":1
+  "manifest": "https://raw.githubusercontent.com/mscrnt/dresden-rpg/main/system.json",
+  "download": "https://github.com/mscrnt/dresden-rpg/archive/refs/heads/main.zip",
+  "grid": {
+    "distance": 1
   },
-	"flags": {
-		"hotReload": {
-		  "extensions": ["css", "html", "hbs", "json"],
-		  "paths": ["system/templates", "css", "lang/en.json"]
-		  }
-	  },
-    "documentTypes": {
-        "Actor": {
-            "fate-core-official": {
-              "htmlFields": [
-                "details.description.value",
-                "details.biography.value",
-                "details.notes.value"
-              ]
-            },
-            "ModularFate": {},
-            "Thing": {}
-        },
-        "Item": {
-            "Extra": {
-              "htmlFields": [
-                "description.value",
-                "permissions",
-                "costs",
-                "actions.overcome",
-                "actions.create",
-                "actions.attack",
-                "actions.defend"
-              ]
-            }
-        }
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "html", "hbs", "json"],
+      "paths": ["system/templates", "css", "lang/en.json"]
     }
+  },
+  "documentTypes": {
+    "Actor": {
+      "dresden-rpg": {
+        "htmlFields": [
+          "details.description.value",
+          "details.biography.value",
+          "details.notes.value"
+        ]
+      },
+      "ModularFate": {},
+      "Thing": {}
+    },
+    "Item": {
+      "Extra": {
+        "htmlFields": [
+          "description.value",
+          "permissions",
+          "costs",
+          "actions.overcome",
+          "actions.create",
+          "actions.attack",
+          "actions.defend"
+        ]
+      }
+    }
+  }
 }
