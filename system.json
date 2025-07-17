@@ -13,7 +13,7 @@
     "minimum": "12",
     "verified": "12.331"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "scripts": [
     "scripts/fcoConstants.js",
     "scripts/ManageSkills.js",

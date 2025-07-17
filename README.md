@@ -1,7 +1,7 @@
 # Dresden Files RPG for Foundry VTT
 
 ![Foundry Version](https://img.shields.io/badge/Foundry-v12-green)
-![System Version](https://img.shields.io/badge/Version-0.1.1-blue)
+![System Version](https://img.shields.io/badge/Version-0.1.2-blue)
 ![License](https://img.shields.io/badge/License-GPLv3-blue)
 
 A comprehensive implementation of the Dresden Files Role-Playing Game for Foundry Virtual Tabletop, based on the Fate Core Official system by Richard Bellingham.
