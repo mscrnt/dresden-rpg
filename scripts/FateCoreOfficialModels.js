@@ -214,6 +214,17 @@ class fcoActorModel extends foundry.abstract.DataModel {
             "stunts":new fields.ObjectField({nullable:true, required:true, initial:{}}),
             "skills":new fields.ObjectField({nullable:true, required:true, initial:{}}),
             "aspects":new fields.ObjectField({nullable:true, required:true, initial:{}}),
+            "dresden":new fields.SchemaField({
+                "magicRating":new fields.NumberField({required:true, initial:0, integer:true}),
+                "willpower":new fields.NumberField({required:true, initial:0, integer:true}),
+                "physicalStress":new fields.ArrayField(new fields.BooleanField(), {required:true, initial:[false, false, false, false]}),
+                "mentalStress":new fields.ArrayField(new fields.BooleanField(), {required:true, initial:[false, false, false, false]}),
+                "consequenceSlots":new fields.SchemaField({
+                    "mild":new fields.StringField({nullable:false, required:true, initial:""}),
+                    "moderate":new fields.StringField({nullable:false, required:true, initial:""}),
+                    "severe":new fields.StringField({nullable:false, required:true, initial:""})
+                })
+            }),
             "override":new fields.SchemaField({
                 "active":new fields.BooleanField ({nullable :false, required:true, initial:false}),
                 "refresh":new fields.NumberField ({nullable:false, required:true, initial:0, integer:true}),
@@ -267,6 +278,7 @@ class fcoExtraModel extends foundry.abstract.DataModel {
 // Register the appropriate data models
 Hooks.on("init", () => {
     CONFIG.Actor.dataModels["fate-core-official"] = fcoActorModel;
+    CONFIG.Actor.dataModels["dresdenrpg"] = fcoActorModel;  // Register for both system IDs
     CONFIG.Actor.dataModels["Thing"] = fcoThingModel;
     CONFIG.Item.dataModels["Extra"] = fcoExtraModel;
 });

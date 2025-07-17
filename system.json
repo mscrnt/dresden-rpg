@@ -146,7 +146,7 @@
   },
   "documentTypes": {
     "Actor": {
-      "dresden-rpg": {
+      "dresdenrpg": {
         "htmlFields": [
           "details.description.value",
           "details.biography.value",
