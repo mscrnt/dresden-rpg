@@ -1,9 +1,11 @@
-# Fate Core Official
-Author: Richard Bellingham, partially based on work by Nick van Oosten (NickEast)
+# Dresden Files RPG for Foundry VTT
+
+![Foundry Version](https://img.shields.io/badge/Foundry-v12-green)
+![System Version](https://img.shields.io/badge/Version-0.1.0-blue)
+
+A comprehensive implementation of the Dresden Files Role-Playing Game for Foundry Virtual Tabletop, based on the Fate Core Official system by Richard Bellingham.
 
 Software License: GNU GPLv3
-
-Other languages: [English](README.md), [Deutsch](README.de.md)
 
 ## Content License:
 This work is based on Fate Core System and Fate Accelerated Edition (found at http://www.faterpg.com/), products of Evil Hat Productions, LLC, developed, authored, and edited by Leonard Balsera, Brian Engard, Jeremy Keller, Ryan Macklin, Mike Olson, Clark Valentine, Amanda Valentine, Fred Hicks, and Rob Donoghue, and licensed for our use under the Creative Commons Attribution 3.0 Unported license (http://creativecommons.org/licenses/by/3.0/).
