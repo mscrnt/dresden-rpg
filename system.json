@@ -171,5 +171,31 @@
         ]
       }
     }
+  },
+  "relationships": {
+    "systems": [],
+    "recommends": [
+      {
+        "id": "dice-so-nice",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "token-action-hud",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "combat-utility-belt",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "pf2e-dorako-ui",
+        "type": "module",
+        "compatibility": {},
+        "reason": "Enhanced UI theming options"
+      }
+    ]
   }
 }
