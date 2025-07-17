@@ -39,7 +39,8 @@
   "styles": [
     "fco.css",
     "mfate-sheet.css",
-    "scripts/Pen/pen.css"
+    "scripts/Pen/pen.css",
+    "styles/dresden.css"
   ],
   "languages": [
     {

@@ -986,6 +986,19 @@ export class fcoCharacter extends ActorSheet {
                     input.blur();
                 }
             })
+            
+            // Dresden stress box handlers
+            const dresdenStressBoxes = html.find('.mfate-dresden__stress-box');
+            dresdenStressBoxes.on("click", async event => {
+                const stressType = event.currentTarget.dataset.stressType;
+                const stressIndex = parseInt(event.currentTarget.dataset.stressIndex);
+                const currentValue = this.actor.system.dresden[`${stressType}Stress`][stressIndex];
+                
+                // Toggle the stress box
+                let updateData = {};
+                updateData[`system.dresden.${stressType}Stress.${stressIndex}`] = !currentValue;
+                await this.actor.update(updateData);
+            });
         }
         super.activateListeners(html);
     }

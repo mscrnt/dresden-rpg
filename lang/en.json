@@ -2144,5 +2144,15 @@
         "Combat":"Combat","Other":"Other","Clued-In Mortal":"Clued-In Mortal","Criminal":"Criminal","Law Enforcement":"Law Enforcement","Leader of the People":"Leader of the People","Medic":"Medic","Monster Hunter":"Monster Hunter","One-Percenter":"One-Percenter","Reporter":"Reporter","Magical Practitioner":"Magical Practitioner","Changeling":"Changeling","Practitioner":"Practitioner","Fae":"Fae","Erlking's Huntmaster":"Erlking's Huntmaster","Knight of a Faerie Court":"Knight of a Faerie Court","Knight of the Cross":"Knight of the Cross","Vampire":"Vampire","Werecreature":"Werecreature"
     },
     "fate-core-official.whatShouldTokenNameBe":"What should this token's name be?",
-    "fate-core-official.DoubleClickToChangeName":"Double click to change the name shown on this token"
+    "fate-core-official.DoubleClickToChangeName":"Double click to change the name shown on this token",
+    "fate-core-official.dresden":"Dresden",
+    "fate-core-official.dresdenMagic":"Dresden Magic & Powers",
+    "fate-core-official.magicRating":"Magic Rating",
+    "fate-core-official.willpower":"Willpower",
+    "fate-core-official.physicalStress":"Physical Stress",
+    "fate-core-official.mentalStress":"Mental Stress",
+    "fate-core-official.consequences":"Consequences",
+    "fate-core-official.mild":"Mild",
+    "fate-core-official.moderate":"Moderate",
+    "fate-core-official.severe":"Severe"
 }

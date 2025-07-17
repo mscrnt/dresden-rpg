@@ -1,0 +1,116 @@
+/* Dresden RPG Specific Styles */
+
+/* Dresden Panel */
+.mfate-panel--dresden {
+    background-color: var(--fco-sheet-background);
+    border: 1px solid var(--fco-border-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Dresden Stats Section */
+.mfate-dresden__stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.mfate-dresden__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mfate-dresden__stat-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--fco-primary-color);
+}
+
+.mfate-dresden__stat-input {
+    width: 60px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 5px;
+    border: 2px solid var(--fco-border-color);
+    border-radius: 3px;
+}
+
+/* Dresden Stress Tracks */
+.mfate-dresden__stress {
+    margin-bottom: 20px;
+}
+
+.mfate-dresden__stress-track {
+    margin-bottom: 15px;
+}
+
+.mfate-dresden__stress-label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--fco-primary-color);
+}
+
+.mfate-dresden__stress-boxes {
+    display: flex;
+    gap: 10px;
+}
+
+.mfate-dresden__stress-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--fco-border-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: white;
+}
+
+.mfate-dresden__stress-box:hover {
+    border-color: var(--fco-primary-color);
+    transform: scale(1.05);
+}
+
+.mfate-dresden__stress-box.checked {
+    background-color: var(--fco-primary-color);
+    color: white;
+}
+
+.mfate-dresden__stress-box span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Dresden Consequences */
+.mfate-dresden__consequences {
+    margin-top: 20px;
+}
+
+.mfate-dresden__consequences-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--fco-primary-color);
+}
+
+.mfate-dresden__consequence {
+    margin-bottom: 10px;
+}
+
+.mfate-dresden__consequence-label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    color: var(--fco-secondary-color);
+}
+
+.mfate-dresden__consequence-input {
+    width: calc(100% - 110px);
+    padding: 5px;
+    border: 1px solid var(--fco-border-color);
+    border-radius: 3px;
+}

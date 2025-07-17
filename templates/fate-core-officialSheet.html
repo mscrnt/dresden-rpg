@@ -49,6 +49,10 @@
                     <span class="sr-only">{{localize 'fate-core-official.Notes'}}</span>
                     <b title="{{localize 'fate-core-official.Notes'}}" class="fas fa-file-alt mfate-sheet__tabs-nav-icon"></b>
                 </a>
+                <a class="mfate-sheet__tabs-nav-link item" data-tab="dresden">
+                    <span class="sr-only">{{localize 'fate-core-official.dresden'}}</span>
+                    <b title="{{localize 'fate-core-official.dresden'}}" class="fas fa-magic mfate-sheet__tabs-nav-icon"></b>
+                </a>
             </nav>
         </div>
     </div>
@@ -419,4 +423,67 @@
             <!--End of bio tab-->
     </section>
     {{/if}}
+    
+    <!-- Dresden Tab -->
+    <div class="tab dresden mfate-sheet__tab mfate-sheet__tab--main" data-tab="dresden">
+        <div class="mfate-panel mfate-panel--dresden">
+            <div class="mfate-panel__header">
+                <b class="mfate-panel__header-label">{{localize 'fate-core-official.dresdenMagic'}}</b>
+            </div>
+            
+            <!-- Magic Rating and Willpower -->
+            <div class="mfate-dresden__stats">
+                <div class="mfate-dresden__stat">
+                    <label class="mfate-dresden__stat-label">{{localize 'fate-core-official.magicRating'}}</label>
+                    <input type="number" name="system.dresden.magicRating" value="{{system.dresden.magicRating}}" class="mfate-dresden__stat-input" />
+                </div>
+                <div class="mfate-dresden__stat">
+                    <label class="mfate-dresden__stat-label">{{localize 'fate-core-official.willpower'}}</label>
+                    <input type="number" name="system.dresden.willpower" value="{{system.dresden.willpower}}" class="mfate-dresden__stat-input" />
+                </div>
+            </div>
+            
+            <!-- Dresden Stress Tracks -->
+            <div class="mfate-dresden__stress">
+                <div class="mfate-dresden__stress-track">
+                    <label class="mfate-dresden__stress-label">{{localize 'fate-core-official.physicalStress'}}</label>
+                    <div class="mfate-dresden__stress-boxes">
+                        {{#each system.dresden.physicalStress}}
+                        <div class="mfate-dresden__stress-box {{#if this}}checked{{/if}}" data-stress-type="physical" data-stress-index="{{@index}}">
+                            <span>{{add @index 1}}</span>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="mfate-dresden__stress-track">
+                    <label class="mfate-dresden__stress-label">{{localize 'fate-core-official.mentalStress'}}</label>
+                    <div class="mfate-dresden__stress-boxes">
+                        {{#each system.dresden.mentalStress}}
+                        <div class="mfate-dresden__stress-box {{#if this}}checked{{/if}}" data-stress-type="mental" data-stress-index="{{@index}}">
+                            <span>{{add @index 1}}</span>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Consequences -->
+            <div class="mfate-dresden__consequences">
+                <h3 class="mfate-dresden__consequences-header">{{localize 'fate-core-official.consequences'}}</h3>
+                <div class="mfate-dresden__consequence">
+                    <label class="mfate-dresden__consequence-label">{{localize 'fate-core-official.mild'}}</label>
+                    <input type="text" name="system.dresden.consequenceSlots.mild" value="{{system.dresden.consequenceSlots.mild}}" class="mfate-dresden__consequence-input" />
+                </div>
+                <div class="mfate-dresden__consequence">
+                    <label class="mfate-dresden__consequence-label">{{localize 'fate-core-official.moderate'}}</label>
+                    <input type="text" name="system.dresden.consequenceSlots.moderate" value="{{system.dresden.consequenceSlots.moderate}}" class="mfate-dresden__consequence-input" />
+                </div>
+                <div class="mfate-dresden__consequence">
+                    <label class="mfate-dresden__consequence-label">{{localize 'fate-core-official.severe'}}</label>
+                    <input type="text" name="system.dresden.consequenceSlots.severe" value="{{system.dresden.consequenceSlots.severe}}" class="mfate-dresden__consequence-input" />
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </form>
