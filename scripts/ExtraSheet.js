@@ -605,10 +605,10 @@ export class ExtraSheet extends ItemSheet {
     async close(...args){
         await super.close(...args);
         if (this.document.parent){
-            if (this.document.parent.type == "fate-core-official" && this.document.system.active){
+            if ((this.document.parent.type == "fate-core-official" || this.document.parent.type == "dresdenrpg") && this.document.system.active){
                 await this.document.parent.updateFromExtra(this.document);
             } else {
-                if (this.document.parent.type == "fate-core-official" && !this.document.system.active){
+                if ((this.document.parent.type == "fate-core-official" || this.document.parent.type == "dresdenrpg") && !this.document.system.active){
                     await this.document.parent.deactivateExtra(this.object)
                 }
                 

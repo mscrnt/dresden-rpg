@@ -46,7 +46,7 @@ export class fcoExtra extends Item {
             if (arg.type == "Extra") itemData = foundry.utils.duplicate(arg);
         })
         if (!itemData) return;
-        if (this?.parent && this?.parent?.type == "fate-core-official") {
+        if (this?.parent && (this?.parent?.type == "fate-core-official" || this?.parent?.type == "dresdenrpg")) {
             await this.parent.updateFromExtra (foundry.utils.duplicate(itemData));
             await this.parent.render(false);
         }
@@ -54,7 +54,7 @@ export class fcoExtra extends Item {
     }
 
     async _onDelete(options, userId){
-        if (this?.parent && this?.parent?.type == "fate-core-official") {
+        if (this?.parent && (this?.parent?.type == "fate-core-official" || this?.parent?.type == "dresdenrpg")) {
             if (userId == game.user.id) await this.parent.deactivateExtra (this, true);
         }
         super._onDelete(options, userId);

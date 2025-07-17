@@ -298,7 +298,7 @@ class EditEntityTrack extends FormApplication {
         tracks [key] = this.track;
 
         let final_tracks = tracks;
-        if (this.entity.type == "fate-core-official") {
+        if (this.entity.type == "fate-core-official" || this.entity.type == "dresdenrpg") {
             final_tracks = await this.entity.setupTracks(this.entity.system.skills, tracks);
         }
         await this.entity.update({   

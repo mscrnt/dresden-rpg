@@ -258,7 +258,10 @@ Hooks.once('ready', async function () {
     //Convert any straggling ModularFate actors to fate-core-official actors.
     let updates = [];
     game.actors.contents.forEach(actor => {
-        if (actor.type == "ModularFate" || actor.type == "FateCoreOfficial") updates.push({_id:actor.id, type:"fate-core-official"})
+        if (actor.type == "ModularFate" || actor.type == "FateCoreOfficial") {
+            let targetType = game.system.id === "dresdenrpg" ? "dresdenrpg" : "fate-core-official";
+            updates.push({_id:actor.id, type:targetType})
+        }
     });
     if (game.user == game.users.activeGM) await Actor.updateDocuments(updates)
 
@@ -914,7 +917,7 @@ game.settings.register("fate-core-official", "refreshTotal", {
     default:3,
     onChange: () =>{
         for (let app in ui.windows){
-            if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official"){
+            if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official" || ui.windows[app]?.object?.type == "dresdenrpg"){
                 ui.windows[app]?.render(false);
             }
         }
@@ -941,7 +944,7 @@ game.settings.register("fate-core-official","freeStunts", {
     default:3,
     onChange: () =>{
         for (let app in ui.windows){
-            if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official"){
+            if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official" || ui.windows[app]?.object?.type == "dresdenrpg"){
                 ui.windows[app]?.render(false);
             }
         }
@@ -959,7 +962,7 @@ game.settings.register("fate-core-official","freeStunts", {
         default:20,
         onChange: () =>{
             for (let app in ui.windows){
-                if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official"){
+                if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official" || ui.windows[app]?.object?.type == "dresdenrpg"){
                     ui.windows[app]?.render(false);
                 }
             }
@@ -976,7 +979,7 @@ game.settings.register("fate-core-official","freeStunts", {
         default:true,
         onChange: () =>{
             for (let app in ui.windows){
-                if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official"){
+                if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official" || ui.windows[app]?.object?.type == "dresdenrpg"){
                     ui.windows[app]?.render(false);
                 }
             }
@@ -993,7 +996,7 @@ game.settings.register("fate-core-official","freeStunts", {
         default:true,
         onChange: () =>{
             for (let app in ui.windows){
-                if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official"){
+                if (ui.windows[app]?.object?.type == "Thing" || ui.windows[app]?.object?.type == "fate-core-official" || ui.windows[app]?.object?.type == "dresdenrpg"){
                     ui.windows[app]?.render(false);
                 }
             }

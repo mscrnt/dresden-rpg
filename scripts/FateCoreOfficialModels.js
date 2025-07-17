@@ -281,6 +281,7 @@ Hooks.on("init", () => {
     CONFIG.Actor.dataModels["fate-core-official"] = fcoActorModel;
     CONFIG.Actor.dataModels["dresdenrpg"] = fcoActorModel;
     CONFIG.Actor.dataModels["ModularFate"] = fcoActorModel;  // Legacy support
+    CONFIG.Actor.dataModels["FateCoreOfficial"] = fcoActorModel;  // Legacy support
     CONFIG.Actor.dataModels["Thing"] = fcoThingModel;
     CONFIG.Item.dataModels["Extra"] = fcoExtraModel;
 });
@@ -295,6 +296,18 @@ Hooks.on("renderTokenConfig", (tokenConfig) => {
     }
     let toSet = {
         "fate-core-official": {
+            bar:possibles,
+            value:["details.fatePoints.value"]
+        },
+        "dresdenrpg": {
+            bar:possibles,
+            value:["details.fatePoints.value"]
+        },
+        "FateCoreOfficial": {
+            bar:possibles,
+            value:["details.fatePoints.value"]
+        },
+        "ModularFate": {
             bar:possibles,
             value:["details.fatePoints.value"]
         }

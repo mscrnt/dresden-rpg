@@ -267,7 +267,7 @@ class FateCharacterDefaults {
             
         const actor_data = {
             name:name,
-            type:"fate-core-official",
+            type: game.system.id === "dresdenrpg" ? "dresdenrpg" : "fate-core-official",
             items:character_default.extras,
             img:character_default.img,
             prototypeToken:{texture:{src:character_default.token_img}, actorLink:a_link},
@@ -400,7 +400,8 @@ Hooks.on("renderSidebarTab", (app, html) => {
         }
 
         if (default_name === "fate-core-official"){
-            await Actor.create({"name":actor_name, "type":"fate-core-official", ownership: perm, "prototypeToken.actorLink":true},{renderSheet:true});
+            let actorType = game.system.id === "dresdenrpg" ? "dresdenrpg" : "fate-core-official";
+            await Actor.create({"name":actor_name, "type":actorType, ownership: perm, "prototypeToken.actorLink":true},{renderSheet:true});
             return;
         }
         await f.createCharacterFromDefault(default_name, actor_name, true);

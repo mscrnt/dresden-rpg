@@ -50,7 +50,7 @@ class FateCharacterImporter {
 
         let actorData = {
             "name":"blank",
-            "type":"fate-core-official",
+            "type": game.system.id === "dresdenrpg" ? "dresdenrpg" : "fate-core-official",
             "system":{
                         details:{
                                     fatePoints:{

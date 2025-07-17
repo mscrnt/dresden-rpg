@@ -12,16 +12,18 @@ export class fcoActor extends Actor {
     // Override the standard createDialog to just spawn a character called 'New Actor'.
     static async createDialog (...args){
         let perm  = {"default":CONST.DOCUMENT_OWNERSHIP_LEVELS[game.settings.get("fate-core-official", "default_actor_permission")]};
+        // Use the system ID as the actor type
+        let actorType = game.system.id === "dresdenrpg" ? "dresdenrpg" : "fate-core-official";
 
         if (args[0].folder) {
-            Actor.create({"name":game.i18n.localize("fate-core-official.newCharacter"), "folder":args[0].folder, "type":"fate-core-official", ownership: perm});
+            Actor.create({"name":game.i18n.localize("fate-core-official.newCharacter"), "folder":args[0].folder, "type":actorType, ownership: perm});
         } else {
-            Actor.create({"name":game.i18n.localize("fate-core-official.newCharacter"), "type":"fate-core-official", ownership: perm});
+            Actor.create({"name":game.i18n.localize("fate-core-official.newCharacter"), "type":actorType, ownership: perm});
         }
     }
 
     async rationaliseKeys(){
-        if (this.type == "fate-core-official"){
+        if (this.type == "fate-core-official" || this.type == "dresdenrpg"){
             let types = ["aspects", "tracks", "stunts", "skills"];
             for (let type of types) {
                 let block = this.system[type];
@@ -46,16 +48,18 @@ export class fcoActor extends Actor {
         await super._preCreate(...args);
 
         if (this.type == "ModularFate" || this.type == "FateCoreOfficial"){
-            this.updateSource({type:"fate-core-official"})
+            // Use the system ID to determine the target type
+            let targetType = game.system.id === "dresdenrpg" ? "dresdenrpg" : "fate-core-official";
+            this.updateSource({type:targetType})
         }
 
         if (this?.system?.details?.fatePoints?.refresh === null||
             this?.system?.details?.fatePoints?.refresh === undefined &&
-            this.type == "fate-core-official"){
+            (this.type == "fate-core-official" || this.type == "dresdenrpg")){
             this.updateSource(this.initialisefcoCharacter());
         }
 
-        if (this.type == "fate-core-official"){
+        if (this.type == "fate-core-official" || this.type == "dresdenrpg" || this.type == "FateCoreOfficial" || this.type == "ModularFate"){
             let types = ["aspects", "tracks", "stunts", "skills"];
             for (let type of types) {
                 let block = this.system[type];
@@ -93,7 +97,8 @@ export class fcoActor extends Actor {
     async _preUpdate(data, options, user){
         await super._preUpdate(data, options, user);
         if (data.type == "ModularFate" || data.type == "FateCoreOfficial"){
-            data.type = "fate-core-official"; 
+            // Use the system ID to determine the target type
+            data.type = game.system.id === "dresdenrpg" ? "dresdenrpg" : "fate-core-official"; 
         }
     }
 
@@ -870,7 +875,7 @@ export class fcoActor extends Actor {
 
     prepareData(...args){
         super.prepareData(...args);
-        if (this.type == "fate-core-official"){
+        if (this.type == "fate-core-official" || this.type == "dresdenrpg"){
             this.system.details.fatePoints.max = this.system.details.fatePoints.refresh;
             this.system.details.fatePoints.value = this.system.details.fatePoints.current;
 
@@ -965,7 +970,7 @@ export class fcoActor extends Actor {
     Hooks.on('renderTokenHUD', function (hudButtons, html, data) {
         //hudButtons.object is the token itself.
         let token = hudButtons.object;
-        if (token.actor.type != "fate-core-official") return;
+        if (token.actor.type != "fate-core-official" && token.actor.type != "dresdenrpg") return;
         let shapes = token.actor.getFlag("fate-core-official","shapes");
         let transitions = "";
 
