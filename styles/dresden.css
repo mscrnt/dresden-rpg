@@ -114,3 +114,116 @@
     border: 1px solid var(--fco-border-color);
     border-radius: 3px;
 }
+
+/* Dresden Chat Cards */
+.dresden-spell-roll,
+.dresden-social-roll,
+.dresden-stress-roll {
+    border: 1px solid var(--fco-border-color);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+}
+
+.dresden-spell-roll .card-header,
+.dresden-social-roll .card-header,
+.dresden-stress-roll .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--fco-primary-color);
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.dresden-spell-roll .profile,
+.dresden-social-roll .profile,
+.dresden-stress-roll .profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.dresden-spell-roll .card-content,
+.dresden-social-roll .card-content,
+.dresden-stress-roll .card-content {
+    padding: 15px;
+}
+
+.dresden-spell-roll .spell-power,
+.dresden-spell-roll .spell-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.dresden-spell-roll h4 {
+    margin: 0 0 10px 0;
+    color: var(--fco-secondary-color);
+}
+
+.dresden-spell-roll .success {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.dresden-spell-roll .failure {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.dresden-spell-roll .willpower-note {
+    color: #3498db;
+    font-style: italic;
+}
+
+.dice-result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+
+.dice-formula {
+    font-family: monospace;
+    color: #666;
+}
+
+.dice-total {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--fco-primary-color);
+}
+
+.approach-description {
+    padding: 10px;
+    background-color: #e8f4f8;
+    border-left: 3px solid var(--fco-primary-color);
+    margin-top: 10px;
+}
+
+.stress-info {
+    background-color: #fff3cd;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.stress-result .success {
+    color: #2ecc71;
+}
+
+.stress-result .failure {
+    color: #e74c3c;
+}
+
+.stress-note {
+    font-style: italic;
+    color: #666;
+}

@@ -1,0 +1,34 @@
+<div class="dresden-social-roll chat-card">
+    <header class="card-header">
+        <h3 class="social-title">Social {{approach}} - {{skill.name}}</h3>
+        <img class="profile" src="{{actor.img}}" title="{{actor.name}}" alt="{{actor.name}}">
+    </header>
+    
+    <div class="card-content">
+        <div class="social-roll">
+            <div class="dice-roll">
+                <div class="dice-result">
+                    <div class="dice-formula">{{roll.formula}}</div>
+                    <div class="dice-total">{{roll.total}}</div>
+                </div>
+            </div>
+            
+            <div class="roll-details">
+                <p><strong>{{skill.name}}</strong> ({{skill.rank}})</p>
+                {{#if bonus}}
+                    <p>Bonus: +{{bonus}}</p>
+                {{/if}}
+            </div>
+            
+            <div class="approach-info">
+                {{#if (eq approach "attack")}}
+                    <p class="approach-description"><i class="fas fa-comments"></i> Social Attack - Inflict mental stress or consequences</p>
+                {{else if (eq approach "maneuver")}}
+                    <p class="approach-description"><i class="fas fa-theater-masks"></i> Social Maneuver - Create aspects on the scene or target</p>
+                {{else if (eq approach "block")}}
+                    <p class="approach-description"><i class="fas fa-shield-alt"></i> Social Block - Prevent certain social actions</p>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="dresden-spell-roll chat-card">
+    <header class="card-header">
+        <h3 class="spell-title">{{spellType}} - {{element}}</h3>
+        <img class="profile" src="{{actor.img}}" title="{{actor.name}}" alt="{{actor.name}}">
+    </header>
+    
+    <div class="card-content">
+        <div class="spell-power">
+            <h4>Power (Conviction)</h4>
+            <div class="dice-roll">
+                <div class="dice-result">
+                    <div class="dice-formula">{{powerRoll.formula}}</div>
+                    <div class="dice-total">{{powerRoll.total}}</div>
+                </div>
+            </div>
+            <p>Actual Power: <strong>{{actualPower}}</strong></p>
+        </div>
+        
+        <div class="spell-control">
+            <h4>Control (Discipline)</h4>
+            <div class="dice-roll">
+                <div class="dice-result">
+                    <div class="dice-formula">{{controlRoll.formula}}</div>
+                    <div class="dice-total">{{controlRoll.total}}</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="spell-result">
+            {{#if controlled}}
+                <p class="success"><i class="fas fa-check-circle"></i> Spell controlled successfully!</p>
+            {{else}}
+                <p class="failure"><i class="fas fa-exclamation-triangle"></i> Lost control! {{backlash}} backlash stress!</p>
+            {{/if}}
+            
+            {{#if willpowerSpent}}
+                <p class="willpower-note"><i class="fas fa-bolt"></i> {{willpowerSpent}} Willpower spent</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

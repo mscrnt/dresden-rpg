@@ -1,0 +1,29 @@
+<div class="dresden-stress-roll chat-card">
+    <header class="card-header">
+        <h3 class="stress-title">{{stressType}} Stress Check</h3>
+        <img class="profile" src="{{actor.img}}" title="{{actor.name}}" alt="{{actor.name}}">
+    </header>
+    
+    <div class="card-content">
+        <div class="stress-info">
+            <p>Incoming Stress: <strong>{{stressAmount}}</strong></p>
+            <p>Defending with: <strong>{{skill}}</strong> ({{skillRank}})</p>
+        </div>
+        
+        <div class="dice-roll">
+            <div class="dice-result">
+                <div class="dice-formula">{{roll.formula}}</div>
+                <div class="dice-total">{{roll.total}}</div>
+            </div>
+        </div>
+        
+        <div class="stress-result">
+            {{#if success}}
+                <p class="success"><i class="fas fa-shield-alt"></i> Stress avoided!</p>
+            {{else}}
+                <p class="failure"><i class="fas fa-heart-broken"></i> Take {{stressAmount}} {{stressType}} stress!</p>
+                <p class="stress-note">Mark {{stressAmount}} boxes on your {{stressType}} stress track or take a consequence.</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

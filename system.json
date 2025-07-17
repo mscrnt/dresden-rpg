@@ -29,6 +29,7 @@
     "scripts/FateCharacterImporter.js",
     "scripts/FateCharacterDefaults.js",
     "scripts/FateCoreOfficialModels.js",
+    "scripts/dresden-rolls.js",
     "scripts/Pen/pen.js",
     "scripts/Pen/markdown.js",
     "scripts/purify.min.js"
