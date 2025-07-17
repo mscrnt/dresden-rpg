@@ -277,8 +277,10 @@ class fcoExtraModel extends foundry.abstract.DataModel {
 
 // Register the appropriate data models
 Hooks.on("init", () => {
+    // Register actor models for all supported types
     CONFIG.Actor.dataModels["fate-core-official"] = fcoActorModel;
-    CONFIG.Actor.dataModels["dresdenrpg"] = fcoActorModel;  // Register for both system IDs
+    CONFIG.Actor.dataModels["dresdenrpg"] = fcoActorModel;
+    CONFIG.Actor.dataModels["ModularFate"] = fcoActorModel;  // Legacy support
     CONFIG.Actor.dataModels["Thing"] = fcoThingModel;
     CONFIG.Item.dataModels["Extra"] = fcoExtraModel;
 });

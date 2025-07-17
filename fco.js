@@ -1267,10 +1267,10 @@ game.settings.register("fate-core-official","freeStunts", {
 
     if (foundry.utils.isNewerVersion(game.version, '9.220')){
         game.system.documentTypes.Item = ["Extra"];
-        game.system.documentTypes.Actor = ["fate-core-official","Thing","FateCoreOfficial", "ModularFate"];
+        game.system.documentTypes.Actor = ["fate-core-official","Thing","FateCoreOfficial", "ModularFate", "dresdenrpg"];
     } else {
         game.system.entityTypes.Item = ["Extra"];
-        game.system.entityTypes.Actor = ["fate-core-official","Thing","FateCoreOfficial", "ModularFate"];
+        game.system.entityTypes.Actor = ["fate-core-official","Thing","FateCoreOfficial", "ModularFate", "dresdenrpg"];
     }
     
 
@@ -1284,7 +1284,7 @@ game.settings.register("fate-core-official","freeStunts", {
 
     //On init, we initialise any settings and settings menus and HUD overrides as required.
     Actors.unregisterSheet('core', ActorSheet);
-    Actors.registerSheet("fate-core-official", fcoCharacter, { types: ["fate-core-official", "FateCoreOfficial", "ModularFate"], makeDefault: true, label:game.i18n.localize("fate-core-official.fcoCharacter") });
+    Actors.registerSheet("fate-core-official", fcoCharacter, { types: ["fate-core-official", "FateCoreOfficial", "ModularFate", "dresdenrpg"], makeDefault: true, label:game.i18n.localize("fate-core-official.fcoCharacter") });
     Actors.registerSheet("Thing" , Thing, {types: ["Thing"], label:game.i18n.localize("fate-core-official.Thing")});
 
     // Register Item sheets
