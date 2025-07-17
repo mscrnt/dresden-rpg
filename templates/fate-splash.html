@@ -1,7 +1,8 @@
-<form style="padding:10px; font-family:var(--fco-font-family); background-image: url('/systems/dresden-rpg/assets/splash.jpg');">
-    <div>
+<form style="padding:10px; font-family:var(--fco-font-family); background-image: url('/systems/dresden-rpg/assets/splash.jpg'); background-size: cover; background-position: center;">
+    <div style="background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(155, 89, 182, 0.7)); border-radius: 10px; box-shadow: 0 0 30px rgba(155, 89, 182, 0.5);">
         <div style= "max-height:{{this.h}}px; height:{{this.h}}px; width:{{this.w}}px; max-width:{{this.w}}px; padding:25px;">
-            <b style="font-size:24pt; color:white">WELCOME TO DRESDEN RPG SYSTEM!</b><p/>
+            <b style="font-size:24pt; color:white; text-shadow: 0 0 20px rgba(155, 89, 182, 0.8);">WELCOME TO THE DRESDEN FILES RPG!</b><p/>
+            <p style="font-size:14pt; color:#ecf0f1; font-style:italic; text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">"The building was on fire, and it wasn't my fault."</p>
             {{#if (gt this.num_modules 0)}}
             <b style="font-size:14pt; color:white">
                 {{{localize 'dresden-rpg.WelcomeTextWithModules'}}}</b>
@@ -24,7 +25,7 @@
             {{/if}}        
         </div>
         <div>
-            <button type="button" id="fco_continue_button" style="margin-left:25%; width:50%; margin-right:25%; padding: .5em .25em; font-size:16pt; color:black; font-weight:bold; background-color:white; border:none">CONTINUE WITHOUT INSTALLING</button>
+            <button type="button" id="fco_continue_button" style="margin-left:25%; width:50%; margin-right:25%; padding: .5em .25em; font-size:16pt; color:white; font-weight:bold; background: linear-gradient(135deg, #8e44ad, #3498db); border:none; border-radius: 5px; box-shadow: 0 0 20px rgba(155, 89, 182, 0.5); text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);">ENTER THE NEVERNEVER</button>
         </div>
     </div>
     </form>

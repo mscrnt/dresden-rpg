@@ -1,5 +1,28 @@
 /* Dresden RPG Specific Styles */
 
+/* Dresden Theme Variables Override */
+.dresdenrpg.sheet {
+    /* Dark magical theme colors */
+    --fco-primary-color: #2c3e50;
+    --fco-primary-color-hover: #34495e;
+    --fco-secondary-color: #e74c3c;
+    --fco-accent-text: #9b59b6;
+    --fco-sheet-background: #f8f9fa;
+    --fco-sheet-border-color: #34495e;
+    --dresden-magic-glow: 0 0 10px rgba(155, 89, 182, 0.5);
+}
+
+/* Dresden-specific tab styling */
+.dresdenrpg.sheet .mfate-sheet__tabs-nav-link[data-tab="dresden"] {
+    background: linear-gradient(135deg, #8e44ad 0%, #3498db 100%);
+    color: white;
+}
+
+.dresdenrpg.sheet .mfate-sheet__tabs-nav-link[data-tab="dresden"].active {
+    background: linear-gradient(135deg, #9b59b6 0%, #5faee3 100%);
+    box-shadow: inset 0 0 20px rgba(155, 89, 182, 0.3);
+}
+
 /* Dresden Panel */
 .mfate-panel--dresden {
     background-color: var(--fco-sheet-background);
@@ -226,4 +249,75 @@
 .stress-note {
     font-style: italic;
     color: #666;
+}
+
+/* Magic-themed enhancements */
+.mfate-dresden__stat-input:focus {
+    border-color: var(--fco-accent-text);
+    box-shadow: var(--dresden-magic-glow);
+    outline: none;
+}
+
+.mfate-dresden__stress-box.checked {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Magical glow effect for consequences */
+.mfate-dresden__consequence-input:not(:placeholder-shown) {
+    border-left: 3px solid var(--fco-accent-text);
+    background-color: rgba(155, 89, 182, 0.05);
+}
+
+/* Dresden magic animations */
+@keyframes magicPulse {
+    0% { box-shadow: 0 0 5px rgba(155, 89, 182, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(155, 89, 182, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(155, 89, 182, 0.5); }
+}
+
+.mfate-dresden__stat-label:hover {
+    animation: magicPulse 2s infinite;
+    text-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+}
+
+/* Custom scrollbar for Dresden content */
+.tab.dresden {
+    scrollbar-color: var(--fco-accent-text) transparent;
+    scrollbar-width: thin;
+}
+
+.tab.dresden::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tab.dresden::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.tab.dresden::-webkit-scrollbar-thumb {
+    background: var(--fco-accent-text);
+    border-radius: 4px;
+}
+
+/* Pentacle watermark effect */
+.mfate-panel--dresden::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 10 L61 40 L90 40 L67 58 L78 88 L50 70 L22 88 L33 58 L10 40 L39 40 Z' fill='none' stroke='%23e0d5f0' stroke-width='0.5' opacity='0.1'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.mfate-panel--dresden > * {
+    position: relative;
+    z-index: 1;
 }
