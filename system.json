@@ -1,5 +1,5 @@
 {
-  "id": "dresden-rpg",
+  "id": "dresdenrpg",
   "title": "Dresden RPG",
   "description": "This system is based on the Fate Core system and adapted to support the Dresden Files Role-Playing Game. It includes features like custom stress tracks, consequences, and skills tailored to the unique aspects of the Dresden universe.",
   "authors": [
@@ -13,7 +13,7 @@
     "minimum": "12",
     "verified": "12.331"
   },
-  "version": "0.0.1",
+  "version": "0.1.0",
   "scripts": [
     "scripts/fcoConstants.js",
     "scripts/ManageSkills.js",
@@ -73,7 +73,7 @@
       "label": "Dresden RPG Macros",
       "path": "/packs/macros.db",
       "type": "Macro",
-      "system": "dresden-rpg",
+      "system": "dresdenrpg",
       "private": false,
       "flags": {}
     },
@@ -82,7 +82,52 @@
       "label": "Dresden RPG Documentation",
       "path": "/packs/documentation.db",
       "type": "JournalEntry",
-      "system": "dresden-rpg",
+      "system": "dresdenrpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dresdenrpg-aspects",
+      "label": "Dresden RPG Aspects",
+      "path": "/packs/dresdenrpg-aspects.db",
+      "type": "Item",
+      "system": "dresdenrpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dresdenrpg-skills",
+      "label": "Dresden RPG Skills",
+      "path": "/packs/dresdenrpg-skills.db",
+      "type": "Item",
+      "system": "dresdenrpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dresdenrpg-stunts",
+      "label": "Dresden RPG Stunts",
+      "path": "/packs/dresdenrpg-stunts.db",
+      "type": "Item",
+      "system": "dresdenrpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dresdenrpg-extras",
+      "label": "Dresden RPG Extras",
+      "path": "/packs/dresdenrpg-extras.db",
+      "type": "Item",
+      "system": "dresdenrpg",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "dresdenrpg-npcs",
+      "label": "Dresden RPG NPCs",
+      "path": "/packs/dresdenrpg-npcs.db",
+      "type": "Actor",
+      "system": "dresdenrpg",
       "private": false,
       "flags": {}
     }
