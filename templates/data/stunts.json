@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Evocation",
+    "description": "You can cast evocation magic, calling forth fire, force, air, earth, water, or spirit.",
+    "refresh_cost": 3,
+    "linked_skill": "Discipline"
+  },
+  {
+    "name": "Thaumaturgy",
+    "description": "You can perform thaumaturgy, the subtle art of ritual magic.",
+    "refresh_cost": 3,
+    "linked_skill": "Lore"
+  },
+  {
+    "name": "The Sight",
+    "description": "You can open your Third Eye to see the true nature of things.",
+    "refresh_cost": 1,
+    "linked_skill": "Lore"
+  },
+  {
+    "name": "Soulgaze",
+    "description": "When you look into someone's eyes, you see into their soul, and they into yours.",
+    "refresh_cost": 0,
+    "linked_skill": "None"
+  },
+  {
+    "name": "Wizard's Constitution",
+    "description": "You heal faster than normal mortals and can recover from injuries that would kill others.",
+    "refresh_cost": 0,
+    "linked_skill": "Endurance"
+  },
+  {
+    "name": "Refinement",
+    "description": "Your magical abilities are more refined, granting additional specialization bonuses.",
+    "refresh_cost": 1,
+    "linked_skill": "Discipline"
+  },
+  {
+    "name": "Channeling",
+    "description": "You can channel a specific element or type of power for evocation effects.",
+    "refresh_cost": 2,
+    "linked_skill": "Discipline"
+  },
+  {
+    "name": "Ritual",
+    "description": "You can perform one specific type of thaumaturgy.",
+    "refresh_cost": 2,
+    "linked_skill": "Lore"
+  },
+  {
+    "name": "Inhuman Strength",
+    "description": "You possess strength beyond mortal limits.",
+    "refresh_cost": 2,
+    "linked_skill": "Might"
+  },
+  {
+    "name": "Inhuman Speed",
+    "description": "You can move faster than humanly possible.",
+    "refresh_cost": 2,
+    "linked_skill": "Athletics"
+  },
+  {
+    "name": "Inhuman Toughness",
+    "description": "You can withstand punishment that would kill a mortal.",
+    "refresh_cost": 2,
+    "linked_skill": "Endurance"
+  },
+  {
+    "name": "Inhuman Recovery",
+    "description": "You heal from injuries at an accelerated rate.",
+    "refresh_cost": 2,
+    "linked_skill": "Endurance"
+  },
+  {
+    "name": "Claws",
+    "description": "You have natural weapons that can tear through flesh.",
+    "refresh_cost": 1,
+    "linked_skill": "Fists"
+  },
+  {
+    "name": "Wings",
+    "description": "You have functional wings that allow you to fly.",
+    "refresh_cost": 1,
+    "linked_skill": "Athletics"
+  },
+  {
+    "name": "Aquatic",
+    "description": "You can breathe underwater and move freely in aquatic environments.",
+    "refresh_cost": 1,
+    "linked_skill": "Athletics"
+  },
+  {
+    "name": "True Faith",
+    "description": "Your faith provides protection against supernatural evil.",
+    "refresh_cost": 1,
+    "linked_skill": "Conviction"
+  },
+  {
+    "name": "Bless This House",
+    "description": "You can create threshold-like protections through faith.",
+    "refresh_cost": 1,
+    "linked_skill": "Conviction"
+  },
+  {
+    "name": "Guide My Hand",
+    "description": "In times of need, your faith guides your actions.",
+    "refresh_cost": 1,
+    "linked_skill": "Conviction"
+  },
+  {
+    "name": "Righteousness",
+    "description": "Your faith empowers you to stand against evil.",
+    "refresh_cost": 2,
+    "linked_skill": "Conviction"
+  },
+  {
+    "name": "Holy Touch",
+    "description": "Your touch can harm creatures of darkness.",
+    "refresh_cost": 1,
+    "linked_skill": "Conviction"
+  }
+]

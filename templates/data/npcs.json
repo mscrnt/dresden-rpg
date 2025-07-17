@@ -1,0 +1,133 @@
+[
+  {
+    "name": "Harry Dresden",
+    "type": "dresdenrpg",
+    "description": "Professional Wizard, Private Investigator, and occasional hero of Chicago.",
+    "aspects": {
+      "high_concept": "Wizard Private Eye",
+      "trouble": "The Doom of Damocles",
+      "aspect3": "Epic Wiseass",
+      "aspect4": "Not So Subtle, Still Quick to Anger",
+      "aspect5": "Chivalry Is Not Dead"
+    },
+    "skills": {
+      "Conviction": 5,
+      "Discipline": 5,
+      "Lore": 4,
+      "Athletics": 4,
+      "Endurance": 3,
+      "Intimidation": 3,
+      "Investigation": 3,
+      "Alertness": 2,
+      "Contacts": 2,
+      "Guns": 2,
+      "Presence": 2,
+      "Rapport": 2,
+      "Fists": 1,
+      "Resources": 1,
+      "Stealth": 1,
+      "Survival": 1,
+      "Weapons": 1
+    },
+    "stunts": ["Evocation", "Thaumaturgy", "The Sight", "Soulgaze", "Wizard's Constitution"],
+    "refresh": 1,
+    "fate_points": 1
+  },
+  {
+    "name": "Karrin Murphy",
+    "type": "dresdenrpg",
+    "description": "Former head of Chicago PD's Special Investigations unit, expert martial artist and marksman.",
+    "aspects": {
+      "high_concept": "Tiny But Fierce Ex-Cop",
+      "trouble": "Protective Instincts",
+      "aspect3": "Aikido Master",
+      "aspect4": "I Am the Law",
+      "aspect5": "Friend of Harry Dresden"
+    },
+    "skills": {
+      "Fists": 5,
+      "Athletics": 4,
+      "Guns": 4,
+      "Alertness": 3,
+      "Endurance": 3,
+      "Intimidation": 3,
+      "Conviction": 2,
+      "Investigation": 2,
+      "Presence": 2,
+      "Weapons": 2,
+      "Contacts": 1,
+      "Driving": 1,
+      "Empathy": 1,
+      "Rapport": 1,
+      "Stealth": 1
+    },
+    "stunts": [],
+    "refresh": 5,
+    "fate_points": 5
+  },
+  {
+    "name": "Michael Carpenter",
+    "type": "dresdenrpg",
+    "description": "Knight of the Cross, wielder of Amoracchius, carpenter, and devoted family man.",
+    "aspects": {
+      "high_concept": "Knight of the Cross",
+      "trouble": "My Family Is My Strength and My Weakness",
+      "aspect3": "Righteousness Is My Armor",
+      "aspect4": "I Will Not Judge, Only Act",
+      "aspect5": "Friend to Harry Dresden"
+    },
+    "skills": {
+      "Conviction": 5,
+      "Weapons": 5,
+      "Athletics": 4,
+      "Endurance": 4,
+      "Presence": 3,
+      "Might": 3,
+      "Empathy": 2,
+      "Craftsmanship": 2,
+      "Lore": 2,
+      "Rapport": 2,
+      "Alertness": 1,
+      "Contacts": 1,
+      "Discipline": 1,
+      "Investigation": 1,
+      "Resources": 1
+    },
+    "stunts": ["True Faith", "Righteousness", "Guide My Hand"],
+    "refresh": 2,
+    "fate_points": 2
+  },
+  {
+    "name": "Thomas Raith",
+    "type": "dresdenrpg",
+    "description": "White Court vampire, hairdresser, and Harry's half-brother.",
+    "aspects": {
+      "high_concept": "White Court Vampire",
+      "trouble": "True Love's Protection",
+      "aspect3": "Harry's Half-Brother",
+      "aspect4": "Prettier Than You",
+      "aspect5": "More Than Just a Monster"
+    },
+    "skills": {
+      "Fists": 4,
+      "Athletics": 4,
+      "Deceit": 4,
+      "Presence": 4,
+      "Endurance": 3,
+      "Empathy": 3,
+      "Rapport": 3,
+      "Intimidation": 2,
+      "Might": 2,
+      "Performance": 2,
+      "Stealth": 2,
+      "Alertness": 1,
+      "Contacts": 1,
+      "Driving": 1,
+      "Guns": 1,
+      "Resources": 1
+    },
+    "stunts": ["Inhuman Strength", "Inhuman Speed", "Inhuman Recovery"],
+    "refresh": 1,
+    "fate_points": 1
+  }
+]

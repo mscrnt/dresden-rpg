@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Alertness",
+    "description": "Noticing things, being aware of your surroundings and changes in them."
+  },
+  {
+    "name": "Athletics",
+    "description": "Physical fitness and movement, from running to jumping to dodging."
+  },
+  {
+    "name": "Burglary",
+    "description": "Bypassing security systems, lockpicking, pickpocketing, and other thievery."
+  },
+  {
+    "name": "Contacts",
+    "description": "Knowing people, having a network of information sources."
+  },
+  {
+    "name": "Conviction",
+    "description": "Mental fortitude, faith, and the strength of your beliefs. Used for spellcasting power."
+  },
+  {
+    "name": "Craftsmanship",
+    "description": "Making and fixing things, from carpentry to car repair."
+  },
+  {
+    "name": "Deceit",
+    "description": "Lying, disguise, and other forms of deception."
+  },
+  {
+    "name": "Discipline",
+    "description": "Mental control, concentration, and precision. Used for spellcasting control."
+  },
+  {
+    "name": "Driving",
+    "description": "Operating vehicles, from cars to boats to aircraft."
+  },
+  {
+    "name": "Empathy",
+    "description": "Understanding others' emotions and motivations."
+  },
+  {
+    "name": "Endurance",
+    "description": "Physical stamina and resistance to harm."
+  },
+  {
+    "name": "Fists",
+    "description": "Unarmed combat, from boxing to martial arts."
+  },
+  {
+    "name": "Guns",
+    "description": "Using firearms of all types."
+  },
+  {
+    "name": "Intimidation",
+    "description": "Scaring people, threatening them, or otherwise using fear as a tool."
+  },
+  {
+    "name": "Investigation",
+    "description": "Finding clues, researching, and putting together information."
+  },
+  {
+    "name": "Lore",
+    "description": "Knowledge of the supernatural world, including creatures, magic, and the Nevernever."
+  },
+  {
+    "name": "Might",
+    "description": "Physical strength and the application of force."
+  },
+  {
+    "name": "Performance",
+    "description": "Artistic expression, from music to acting to public speaking."
+  },
+  {
+    "name": "Presence",
+    "description": "Force of personality, leadership, and making an impression."
+  },
+  {
+    "name": "Rapport",
+    "description": "Making friends, being likeable, and social interaction."
+  },
+  {
+    "name": "Resources",
+    "description": "Material wealth and the ability to acquire things."
+  },
+  {
+    "name": "Scholarship",
+    "description": "General education and knowledge of mundane topics."
+  },
+  {
+    "name": "Stealth",
+    "description": "Hiding, sneaking, and avoiding detection."
+  },
+  {
+    "name": "Survival",
+    "description": "Thriving in hostile environments, tracking, and outdoorsmanship."
+  },
+  {
+    "name": "Weapons",
+    "description": "Using melee weapons, from swords to clubs to improvised weapons."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Wizard of the White Council",
+    "description": "You are a fully trained wizard and a member of the White Council of Wizards."
+  },
+  {
+    "name": "The Sight",
+    "description": "You have the ability to perceive the true nature of things, seeing through veils and illusions."
+  },
+  {
+    "name": "Marked by Power",
+    "description": "You've been touched by supernatural power, and it shows to those who know how to look."
+  },
+  {
+    "name": "In Over My Head",
+    "description": "You're dealing with forces far beyond your usual experience or capability."
+  },
+  {
+    "name": "Mortal Born to Magic",
+    "description": "You were born with magical talent, whether you've developed it or not."
+  },
+  {
+    "name": "Emissary of a Fae Court",
+    "description": "You represent either the Summer or Winter Court in mortal affairs."
+  },
+  {
+    "name": "Champion of God",
+    "description": "You serve a higher power and are empowered by your faith."
+  },
+  {
+    "name": "Cursed by the Supernatural",
+    "description": "A supernatural entity has placed a curse upon you that affects your life."
+  },
+  {
+    "name": "Touched by the Nevernever",
+    "description": "You've spent time in the Nevernever, and it has left its mark on you."
+  },
+  {
+    "name": "Accords Signatory",
+    "description": "You are a recognized member of the Unseelie Accords with all the rights and responsibilities that entails."
+  }
+]

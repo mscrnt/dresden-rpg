@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Warden's Sword",
+    "description": "An enchanted silver sword that can cut through supernatural defenses and harm creatures immune to normal weapons.",
+    "permissions": "Must be a Warden of the White Council",
+    "costs": "Requires regular maintenance and proper storage",
+    "refresh": 0
+  },
+  {
+    "name": "Shield Bracelet",
+    "description": "A focus item that helps channel defensive magic, providing bonuses to blocking with evocation.",
+    "permissions": "Must have Evocation",
+    "costs": "Takes an item slot",
+    "refresh": 0
+  },
+  {
+    "name": "Blasting Rod",
+    "description": "A focus item for offensive evocation, providing bonuses to attack rolls with evocation.",
+    "permissions": "Must have Evocation",
+    "costs": "Takes an item slot",
+    "refresh": 0
+  },
+  {
+    "name": "Enchanted Duster",
+    "description": "A leather duster enchanted with protective spells, acting as light armor.",
+    "permissions": "Must have Thaumaturgy or know an enchanter",
+    "costs": "Requires periodic re-enchantment",
+    "refresh": 0
+  },
+  {
+    "name": "Potion Slots",
+    "description": "The ability to prepare magical potions in advance for later use.",
+    "permissions": "Must have Thaumaturgy with crafting specialization",
+    "costs": "Requires time and materials to prepare",
+    "refresh": 1
+  },
+  {
+    "name": "Sanctum",
+    "description": "A place of power under your control, providing bonuses to magical workings performed there.",
+    "permissions": "Must own or control the location",
+    "costs": "Requires maintenance and defense",
+    "refresh": 0
+  },
+  {
+    "name": "Demesne",
+    "description": "A portion of the Nevernever under your control, accessible from your sanctum.",
+    "permissions": "Must have a Sanctum and significant magical power",
+    "costs": "Requires constant vigilance against intrusion",
+    "refresh": 1
+  },
+  {
+    "name": "White Council Membership",
+    "description": "Full membership in the White Council of Wizards, with voting rights and obligations.",
+    "permissions": "Must be a wizard of sufficient power and standing",
+    "costs": "Subject to the Laws of Magic and Council politics",
+    "refresh": 0
+  },
+  {
+    "name": "Accords Membership",
+    "description": "Recognition as a freeholding lord under the Unseelie Accords.",
+    "permissions": "Must have sufficient supernatural power or backing",
+    "costs": "Must honor the Accords and accept challenges",
+    "refresh": 0
+  },
+  {
+    "name": "Summer Knight Mantle",
+    "description": "The power and authority of the Summer Knight.",
+    "permissions": "Must be chosen by the Summer Queen",
+    "costs": "Bound to serve Summer's interests",
+    "refresh": 3
+  },
+  {
+    "name": "Winter Knight Mantle",
+    "description": "The power and authority of the Winter Knight.",
+    "permissions": "Must be chosen by the Winter Queen",
+    "costs": "Bound to serve Winter's interests",
+    "refresh": 3
+  },
+  {
+    "name": "Sword of the Cross",
+    "description": "One of three holy swords empowered by faith to fight evil.",
+    "permissions": "Must be chosen as a Knight of the Cross",
+    "costs": "Must act with righteous purpose",
+    "refresh": 0
+  }
+]
